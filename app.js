@@ -5,6 +5,7 @@ import { fetchPosts, getUser, logout } from './fetch.utils.js';
 const bulletin = document.getElementById('bulletin-board');
 const authButton = document.getElementById('auth-button');
 const createButton = document.getElementById('create');
+
 /* State */
 
 /* Events */
