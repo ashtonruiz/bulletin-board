@@ -16,9 +16,6 @@ window.addEventListener('load', async () => {
         authButton.addEventListener('click', logout);
         authButton.textContent = 'Logout';
     } else {
-        authButton.addEventListener('click', () => {
-            location.replace('/auth');
-        });
         authButton.textContent = 'Login';
     }
 
@@ -32,6 +29,9 @@ window.addEventListener('load', async () => {
         bulletin.append(postDiv);
     }
 });
-/* Display Functions */
+
+authButton.addEventListener('click', () => {
+    location.replace('./auth');
+});
 
 // (don't forget to call any display functions you want to run on page load!)
