@@ -11,7 +11,7 @@ export function getUser() {
 export async function checkAuth() {
     const user = await getUser();
 
-    if (!user) location.replace('/auth');
+    if (!user) location.replace('/create');
 }
 export async function redirectIfLoggedIn() {
     if (await getUser()) {
@@ -43,4 +43,11 @@ export async function fetchPosts() {
     return response.data;
 }
 
-// we need createNewPost function here!
+export async function createNewPost(post) {
+    const response = await client.from('posts').insert(post);
+    if (response.data) {
+        return response.data;
+    } else {
+        console.error(response.error);
+    }
+}
