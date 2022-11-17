@@ -1,6 +1,6 @@
 /* Imports */
 import { fetchPosts, getUser, logout } from './fetch.utils.js';
-
+import { renderPostIt } from './render.utils.js';
 /* Get DOM Elements */
 const bulletin = document.getElementById('bulletin-board');
 const authButton = document.getElementById('auth-button');
@@ -23,7 +23,7 @@ window.addEventListener('load', async () => {
         location.replace('/create');
     });
 
-    const posts = await getPosts();
+    const posts = await fetchPosts();
     for (let post of posts) {
         const postDiv = renderPostIt(post);
         bulletin.append(postDiv);
