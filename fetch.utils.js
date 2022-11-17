@@ -42,3 +42,5 @@ export async function fetchPosts() {
 
     return response.data;
 }
+
+// we need createNewPost function here!

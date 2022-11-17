@@ -31,7 +31,7 @@ window.addEventListener('load', async () => {
 });
 
 authButton.addEventListener('click', () => {
-    location.replace('./auth');
+    location.replace('/auth');
 });
 
 // (don't forget to call any display functions you want to run on page load!)

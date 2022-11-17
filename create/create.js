@@ -1,4 +1,4 @@
-import { createNewPost } from '../fetch-utils.js';
+import { createNewPost } from '../fetch.utils.js';
 
 const form = document.getElementById('create-post');
 
@@ -13,3 +13,5 @@ form.addEventListener('submit', async (e) => {
     const response = await createNewPost(newPost);
     console.log(response);
 });
+
+// need createNewPost function in fetch.utils
