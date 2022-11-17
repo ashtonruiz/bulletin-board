@@ -10,8 +10,7 @@ export function getUser() {
 
 export async function checkAuth() {
     const user = await getUser();
-
-    if (!user) location.replace('/create');
+    if (!user) location.replace('/');
 }
 export async function redirectIfLoggedIn() {
     if (await getUser()) {
@@ -21,7 +20,7 @@ export async function redirectIfLoggedIn() {
 
 export async function signupUser(email, password) {
     const response = await client.auth.signUp({ email, password });
-    console.log(response);
+    // console.log(response);
     return response.user;
 }
 

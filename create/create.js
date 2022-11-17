@@ -1,6 +1,9 @@
-import { createNewPost } from '../fetch.utils.js';
+import { createNewPost, checkAuth } from '../fetch.utils.js';
 
 const form = document.getElementById('create-post');
+const homeBtn = document.getElementById('home-btn');
+
+checkAuth();
 
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -11,7 +14,10 @@ form.addEventListener('submit', async (e) => {
         contact: data.get('contact'),
     };
     const response = await createNewPost(newPost);
-    console.log(response);
+    // console.log(response);
 });
 
+homeBtn.addEventListener('click', () => {
+    location.replace('/');
+});
 // need createNewPost function in fetch.utils

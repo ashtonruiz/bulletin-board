@@ -1,5 +1,5 @@
 /* Imports */
-import { fetchPosts, getUser, logout } from './fetch.utils.js';
+import { fetchPosts, getUser, logout, createNewPost } from './fetch.utils.js';
 import { renderPostIt } from './render.utils.js';
 /* Get DOM Elements */
 const bulletin = document.getElementById('bulletin-board');
