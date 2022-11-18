@@ -1,8 +1,8 @@
 :root {
-    --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
-    --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
-        'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
+    --background: url(../assets/Red-Brick-2-Wall-Mural_4619817c-ccf9-4e6d-978c-e7123fd04ded_1080x.jpg);
+    --header-background: #d0cfcf;
+    --primary-font: 'Shadows Into Light', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans',
+        'DejaVu Sans', 'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
 
 body {
@@ -23,7 +23,7 @@ header {
     gap: 10px;
 
     background-color: var(--header-background);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.12), 5px 5px 7px rgba(0, 0, 0, 0.24);
 }
 
 header .logo {
@@ -31,5 +31,7 @@ header .logo {
 }
 
 main {
+    background-size: 100%;
     padding: 20px;
+    margin: 30px;
 }

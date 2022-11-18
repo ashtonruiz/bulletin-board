@@ -1,0 +1,19 @@
+.auth-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(to bottom left, #ccff99 0%, #ff66cc 103%);
+}
+
+.auth-container {
+    margin: 10px;
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-container button {
+    margin: 10px;
+}
