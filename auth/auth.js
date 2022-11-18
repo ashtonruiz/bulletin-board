@@ -1,6 +1,7 @@
 import { redirectIfLoggedIn, signInUser, signupUser } from '../fetch.utils.js';
 
 const signInForm = document.getElementById('sign-in');
+const homeButton2 = document.getElementById('home-btn2');
 
 const signUpForm = document.getElementById('sign-up');
 
@@ -28,4 +29,8 @@ signInForm.addEventListener('submit', async (e) => {
     if (user) {
         location.replace('/');
     }
+});
+
+homeButton2.addEventListener('click', () => {
+    location.replace('/');
 });
