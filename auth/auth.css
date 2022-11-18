@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background: linear-gradient(to bottom left, #ccff99 0%, #ff66cc 103%);
 }
 
 .auth-container {
