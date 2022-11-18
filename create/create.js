@@ -13,7 +13,8 @@ form.addEventListener('submit', async (e) => {
         description: data.get('description'),
         contact: data.get('contact'),
     };
-    const response = await createNewPost(newPost);
+    await createNewPost(newPost);
+    location.replace('/');
     // console.log(response);
 });
 
